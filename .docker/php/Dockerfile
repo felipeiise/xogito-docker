@@ -35,7 +35,4 @@ RUN mv composer.phar /usr/bin/composer
 
 WORKDIR /var/www/html
 
-RUN composer create-project felipeiise/xogito-api .
-RUN mv .env.example .env
-
 EXPOSE 80
