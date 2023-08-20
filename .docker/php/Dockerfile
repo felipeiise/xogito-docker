@@ -26,7 +26,7 @@ RUN docker-php-ext-install gd intl pdo_mysql pdo_pgsql mysqli zip \
 
 RUN pecl install imagick-3.4.3
 
-RUN pecl install xdebug && docker-php-ext-enable xdebug
+RUN pecl install xdebug-3.1.5 && docker-php-ext-enable xdebug
 
 RUN docker-php-ext-enable imagick
 
